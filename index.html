@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TITLE</title>
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <header>
+      <h1>OUTER AND INNER BOX-SHADOWS</h1>
+      <h2>A CSS SYNTAX OVERVIEW</h2>
+
+    </header>
+
+    <div class="container">
+
+      <h3><span style="background-color: pink">X-offset: right or left (-)</span> <span style="background-color: rgb(103, 209, 96)">Y-offset: bottom or top (-)</span> <span style="background-color: lightblue">Blur</span> <span style="background-color: khaki">Spread</span> <span style="background-color: lightgrey">Color</span></h3>
+      <h4><span style="background-color: pink">Necessary</span> <span style="background-color: rgb(103, 209, 96)">Necessary</span> <span style="background-color: lightblue">Optional</span> <span style="background-color: khaki">Optional</span> <span style="background-color: lightgrey">Optional</span></h4>
+
+      <div id="top">
+        <p>box-shadow: <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="right">
+        <p>box-shadow: <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom">
+        <p>box-shadow: <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="left">
+        <p>box-shadow: <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div id="top-right">
+        <p>box-shadow: <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="top-left">
+        <p>box-shadow: <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-right">
+        <p>box-shadow: <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-left">
+        <p>box-shadow: <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <h5>Inner shadows: use keyword "inset" and reverse offset values <br>(plus becomes minus)</h5>
+
+      <div id="top-inset">
+        <p>box-shadow: inset <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="right-inset">
+        <p>box-shadow: inset <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-inset">
+        <p>box-shadow: inset <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="left-inset">
+        <p>box-shadow: inset <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div id="top-right-inset">
+        <p>box-shadow: inset <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="top-left-inset">
+        <p>box-shadow: inset <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-right-inset">
+        <p>box-shadow: inset <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-left-inset">
+        <p>box-shadow: inset <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <h5>Combinations: separate with comma</h5>
+
+      <div id="right-left">
+        <p>box-shadow: <span style="background-color: pink">-10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>,<br>
+        <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">0</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="bottom-top">
+        <p>box-shadow: <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>,<br>
+        <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="outer-inner">
+        <p>box-shadow: <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>,<br>
+        inset <span style="background-color: pink">0</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+      <div id="outer-inner-twosided">
+        <p>box-shadow: <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>,<br>
+        inset <span style="background-color: pink">10px</span> <span style="background-color: rgb(103, 209, 96)">-10px</span> <span style="background-color: lightblue">4px</span> <span style="background-color: khaki">-2px</span> <span style="background-color: lightgrey">#707070</span>;</p>
+      </div>
+
+    </div>
+
+
+    <footer>
+          <h6>Idea & layout: Trud Antzée 2018</h6>
+          <div id="info">
+            <div id="twitter"><a href="https://twitter.com/Antzee_" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
+            <div id="instagram"><a href="https://www.instagram.com/ameliacodes/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></div>
+            <div id="codepen"><a href="https://codepen.io/Antzee/#" target="_blank"><i class="fab fa-codepen fa-2x"></i></a></div>
+            <div id="youtube"><a href="https://www.youtube.com/channel/UCMn3c-c4h9571gBzmkbKYig" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></div>
+          </div>
+    </footer>
+
+
+  </div>
+
+  <script type="text/javascript" src="resources/js/main.js"></script>
+</body>
+
+
+</html>
